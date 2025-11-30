@@ -45,10 +45,10 @@ export default function TaskModal({
       onClick={handleBackdropClick}
     >
       <div className="bg-white rounded-2xl p-6 max-w-md w-full shadow-xl">
-        <h2 className="text-2xl font-bold text-gray-900 mb-1">
+        <h2 className="text-2xl font-bold text-black mb-1">
           Add {categoryName} Task
         </h2>
-        <p className="text-sm text-gray-500 mb-6">
+        <p className="text-sm text-black mb-6">
           Complete a task to earn XP
         </p>
 
@@ -56,7 +56,7 @@ export default function TaskModal({
           <div className="mb-4">
             <label
               htmlFor="taskName"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium text-black mb-2"
             >
               Task Name
             </label>
@@ -65,7 +65,7 @@ export default function TaskModal({
               type="text"
               value={taskName}
               onChange={(e) => setTaskName(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-black focus:outline-none transition-colors text-black"
               placeholder="What did you accomplish?"
               autoFocus
             />
@@ -74,7 +74,7 @@ export default function TaskModal({
           <div className="mb-6">
             <label
               htmlFor="xp"
-              className="block text-sm font-medium text-gray-700 mb-2"
+              className="block text-sm font-medium text-black mb-2"
             >
               XP Points
             </label>
@@ -83,7 +83,7 @@ export default function TaskModal({
               type="number"
               value={xp}
               onChange={(e) => setXp(Math.max(1, parseInt(e.target.value) || 1))}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-gray-400 focus:outline-none transition-colors text-black"
               min="1"
               step="5"
             />
@@ -93,7 +93,7 @@ export default function TaskModal({
             <button
               type="button"
               onClick={onClose}
-              className="flex-1 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+              className="flex-1 px-4 py-3 rounded-xl border border-gray-300 text-black font-medium hover:bg-gray-50 transition-colors"
             >
               Cancel
             </button>
