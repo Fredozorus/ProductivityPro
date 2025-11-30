@@ -70,7 +70,7 @@ export default function Home() {
   const selectedCategoryData = categories.find(c => c.id === selectedCategory);
 
   return (
-    <main className="min-h-screen bg-gray-50 p-4 sm:p-6 lg:p-8">
+    <main className="min-h-screen bg-gray-50 dark:bg-black p-4 sm:p-6 lg:p-8">
       <div className="max-w-4xl mx-auto space-y-6">
         <StatsHeader stats={stats} />
 
